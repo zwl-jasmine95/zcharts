@@ -81,7 +81,6 @@ function zcharts(option) {
         var yA0 = d3.svg.axis()  //y轴
             .scale(y.yScale0)
             .orient('left')
-            // .innerTickSize(-height-padding.left).outerTickSize(0)
             .tickPadding(10);
         y.yScale1 = d3.scale.linear()  //y轴比例尺
             .domain([0,y1Max])
@@ -89,7 +88,6 @@ function zcharts(option) {
         var yA1 = d3.svg.axis()  //y轴
             .scale(y.yScale1)
             .orient('right')
-            // .innerTickSize(-height-padding.left).outerTickSize(0)
             .tickPadding(10);
 
         y.yAxis.push(yA0);y.yAxis.push(yA1);
@@ -97,6 +95,34 @@ function zcharts(option) {
         /**
          * end of axis scale
          */
+
+        //添加x轴
+        svg.append('g')
+            .attr('class','x axis')
+            .attr('transform','translate(' + padding.left + ',' + (height - padding.bottom) + ')')
+            .call(x.xAxis)
+            //增加x坐标值说明
+            .append('text')
+            .text(x.xName)
+            .attr('transform','translate(' + (width - padding.right - padding.left) + ',' + 25 + ')');
+        //添加y轴
+        option.yAxis.map(function (d,i) {
+            var yaxis;
+            if(i == 0){
+                yaxis = svg.append('g')
+                    .attr('class','y axis')
+                    .attr('transform','translate(' + padding.left + ',' + padding.top + ')')
+                    .call(y.yAxis[i]);
+            }else if(i == 1){
+                yaxis = svg.append('g')
+                    .attr('class','y axis')
+                    .attr('transform','translate(' + (width - padding.right) + ',' + padding.top + ')')
+                    .call(y.yAxis[i]);
+            }
+            yaxis.append('text')
+                .text(y.yName[i])
+                .attr('transform','translate(' + -25 + ',' + -15 + ')');
+        });
 
         opts.svg = svg;
         opts.width = width;
@@ -112,38 +138,6 @@ function zcharts(option) {
                 zcharts.drawBar(opts);
             }else if(d.type == 'line'){
                 zcharts.drawLine(opts);
-            }
-        });
-
-        //添加x轴
-        svg.append('g')
-            .attr('class','x axis')
-            .attr('transform','translate(' + padding.left + ',' + (height - padding.bottom) + ')')
-            .call(x.xAxis)
-            //增加x坐标值说明
-            .append('text')
-            .text(x.xName)
-            .attr('transform','translate(' + (width - padding.right - padding.left) + ',' + 25 + ')');
-        //添加y轴
-        option.yAxis.map(function (d,i) {
-            if(i == 0){
-                svg.append('g')
-                    .attr('class','y axis')
-                    .attr('transform','translate(' + padding.left + ',' + padding.top + ')')
-                    .call(y.yAxis[i])
-                    //增加y坐标值说明
-                    .append('text')
-                    .text(y.yName[i])
-                    .attr('transform','translate(' + -25 + ',' + -15 + ')');
-            }else if(i == 1){
-                svg.append('g')
-                    .attr('class','y axis')
-                    .attr('transform','translate(' + (width - padding.left) + ',' + padding.top + ')')
-                    .call(y.yAxis[i])
-                    //增加y坐标值说明
-                    .append('text')
-                    .text(y.yName[i])
-                    .attr('transform','translate(' + -25 + ',' + -15 + ')');
             }
         });
     };
@@ -260,11 +254,11 @@ function zcharts(option) {
                 .attr('r', 3)
                 .attr('stroke', d.color)
                 .attr('transform','translate(' + (padding.left + x.xScale.rangeBand()/2) + ',' + padding.top + ')');
-
-
-
-
         });
+    };
+
+    zcharts.drawLegend = function (options) {
+        
     };
 
     return zcharts;

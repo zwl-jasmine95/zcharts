@@ -1,8 +1,8 @@
 (function () {
     var timeOption = {
-        padding:{top:100,bottom:100,left:100,right:100},
+        padding:{top:100,bottom:100,left:50,right:100},
         container:{width:700,height:400},
-        color:['#f42448','#9abf1a','#de7921','#e4dd44','#ff5108'],
+        color:['#95CCE6','#B6A2DE','#FED23D','#4087D7','#CBD87E'],
         legend:["融资数量","融资金额"],
         xAxis : 
         {

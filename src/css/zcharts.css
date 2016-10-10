@@ -1,5 +1,13 @@
 /**
- *01.坐标轴
+ *01.
+ *
+*/
+svg{
+    font-family: "Microsoft YaHei";
+    font-size: 14px;
+}
+/**
+ *02.坐标轴
  *坐标轴、刻度线
 */
 .axis path,
@@ -9,28 +17,32 @@
     shape-rendering: crispEdges;
 }
 .axis text,.tips-text{
-    font-family: sans-serif;
     font-size: 11px;
-}
-.axis .tick line {
-    /*stroke: rgba(0, 0, 0, 0.1);*/
 }
 
 /**
- *02.折线
+ *03.折线
  *折线、圆点
 */
 .line{
     fill: none;
+    stroke-width:2px;
 }
 .linecircle{
     fill:#fff;
 }
 /**
- *03.交互提示框
+ *04.交互提示框
  *
 */
-.tips-border{
-    fill:#fff;
-    stroke: #7C7C7C;
+.tooltip{
+    position: absolute;
+    width: 120px;
+    height: auto;
+    font-size: 14px;
+    text-align: center;
+    border: solid 1px;
+    background-color: #6F6F6F;
+    color: #fff;
+    border-radius: 5px;
 }
