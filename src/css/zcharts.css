@@ -1,0 +1,33 @@
+/**
+ *01.坐标轴
+ *坐标轴、刻度线
+*/
+.axis path,
+.axis line{
+    fill: none;
+    stroke: black;
+    shape-rendering: crispEdges;
+}
+.axis text,.tips-text{
+    font-family: sans-serif;
+    font-size: 11px;
+}
+
+/**
+ *02.折线
+ *折线、圆点
+*/
+.line{
+    fill: none;
+}
+.linecircle{
+    fill:#fff;
+}
+/**
+ *03.交互提示框
+ *
+*/
+.tips-border{
+    fill:#fff;
+    stroke: #7C7C7C;
+}

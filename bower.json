@@ -1,0 +1,21 @@
+{
+  "name": "zcharts",
+  "description": "",
+  "main": "gulpfile.js",
+  "authors": [
+    "zeng wenli"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "d3": "3.5.17",
+    "jquery": "^3.1.1"
+  }
+}

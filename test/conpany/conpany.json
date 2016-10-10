@@ -1,0 +1,157 @@
+[
+  {
+    "id": null,
+    "name": null,
+    "xAxis": [
+      {
+        "data": [
+          "北京加双筷子科技有限公司",
+          "北京小桔科技有限公司",
+          "南京途牛科技有限公司"
+        ],
+        "key": "financedParty.financedPartyName",
+        "name": "创业公司",
+        "total": null
+      }
+    ],
+    "yAxis": [
+      {
+        "data": [4,8,9],
+        "key": null,
+        "name": "融资数量",
+        "total": null
+      },
+      {
+        "data": [18981,3310106,1199877],
+        "key": null,
+        "name": "融资金额",
+        "total": null
+      }
+    ]
+  },
+  {
+    "id": null,
+    "name": null,
+    "xAxis": [
+      {
+        "data":["2010", "2011", "2012", "2013", "2014", "2015", "2016"],
+        "key": "financedDate",
+        "name": "融资时间",
+        "total": null
+      }
+    ],
+    "yAxis": [
+      {
+        "data":[0, 0, 0, 0, 13346, 2002020, 667340],
+        "key": null,
+        "name": "F轮-上市前",
+        "total": null
+      },
+      {
+        "data":[0, 0, 0, 0, 0, 9107, 0],
+        "key": null,
+        "name": "B+轮",
+        "total": null
+      },
+      {
+        "data":[0, 0, 0, 0, 0, 94762, 0],
+        "key": null,
+        "name": "E轮",
+        "total": null
+      },
+      {
+        "data":[0, 0, 0, 0, 0, 9107, 0],
+        "key": null,
+        "name": "B+轮",
+        "total": null
+      },
+      {
+        "data":[0, 33367, 0, 0, 66734, 0, 0],
+        "key": null,
+        "name": "C轮",
+        "total": null
+      },
+      {
+        "data":[0, 0, 0, 40040, 467138, 0, 0],
+        "key": null,
+        "name": "D轮",
+        "total": null
+      },
+      {
+        "data":[0, 0, 0, 0, 6673, 0, 0],
+        "key": null,
+        "name": "IPO上市",
+        "total": null
+      },
+      {
+        "data":[0, 0, 0, 0, 98766, 667340, 333670],
+        "key": null,
+        "name": "IPO上市后",
+        "total": null
+      },
+      {
+        "data":[6673, 0, 0, 10010, 0, 9107, 0],
+        "key": null,
+        "name": "B轮",
+        "total": null
+      },
+      {
+        "data":[0, 0, 2002, 0, 667, 0, 0],
+        "key": null,
+        "name": "A轮",
+        "total": null
+      },
+      {
+        "data":[0, 0, 100, 0, 100, 0, 0],
+        "key": null,
+        "name": "天使轮",
+        "total": null
+      }
+    ]
+  },
+  {
+    "id": null,
+    "name": null,
+    "xAxis": [
+      {
+        "data":["南京途牛科技有限公司", "北京小桔科技有限公司", "北京加双筷子科技有限公司"],
+        "key": "financedParty.financedPartyName",
+        "name": "创业公司",
+        "total": null
+      }
+    ],
+    "yAxis": [
+      {"key": null, "name": "融资数量", "total": null, "data": [0, 1, 0]},
+      {"key": null, "name": "京东", "total": null, "data": [2, 0, 0]},
+      {"key": null, "name": "鼎晖投资", "total": null, "data": [0, 1, 0]},
+      {"key": null, "name": "戈壁投资", "total": null, "data": [1, 0, 0]},
+      {"key": null, "name": "中投公司", "total": null, "data": [0, 2, 0]},
+      {"key": null, "name": "首都航空", "total": null, "data": [1, 0, 0]},
+      {"key": null, "name": "腾讯", "total": null, "data": [0, 4, 0]},
+      {"key": null, "name": "北汽产业投资基金", "total": null, "data": [0, 1, 0]},
+      {"key": null, "name": "赛领资本", "total": null, "data": [0, 1, 0]},
+      {"key": null, "name": "中信产业基金", "total": null, "data": [0, 1, 0]},
+      {"key": null, "name": "阿里巴巴", "total": null, "data": [0, 1, 0]},
+      {"key": null, "name": "弘毅投资", "total": null, "data": [2, 0, 0]},
+      {"key": null, "name": "投资方未透露", "total": null, "data": [1, 0, 0]},
+      {"key": null, "name": "奇虎360", "total": null, "data": [1, 0, 0]},
+      {"key": null, "name": "中信资本", "total": null, "data": [0, 1, 0]},
+      {"key": null, "name": "中广文影", "total": null, "data": [1, 0, 0]},
+      {"key": null, "name": "今日资本", "total": null, "data": [0, 0, 2]},
+      {"key": null, "name": "Coatue Management", "total": null, "data": [0, 1, 0]},
+      {"key": null, "name": "中国平安(平安创新投)", "total": null, "data": [0, 1, 0]},
+      {"key": null, "name": "高原资本", "total": null, "data": [1, 0, 0]},
+      {"key": null, "name": "春华资本Primavera", "total": null, "data": [0, 1, 0]},
+      {"key": null, "name": "Temasek淡马锡", "total": null, "data": [2, 2, 0]},
+      {"key": null, "name": "DCM中国", "total": null, "data": [4, 0, 0]},
+      {"key": null, "name": "红杉资本中国", "total": null, "data": [3, 0, 0]},
+      {"key": null, "name": "新浪微博(新浪微创投)", "total": null, "data": [0, 1, 0]},
+      {"key": null, "name": "天使投资人王刚", "total": null, "data": [0, 1, 1]},
+      {"key": null, "name": "民航股权投资基金", "total": null, "data": [0, 1, 0]},
+      {"key": null, "name": "金沙江创投", "total": null, "data": [0, 1, 2]},
+      {"key": null, "name": "DST", "total": null, "data": [0, 1, 0]},
+      {"key": null, "name": "海航资本", "total": null, "data": [1, 0, 0]},
+      {"key": null, "name": "携程", "total": null, "data": [3, 0, 0]}
+    ]
+  }
+]
