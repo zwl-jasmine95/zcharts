@@ -20,19 +20,16 @@
         series: [
             {
                 name:'融资数量',
-                type:'line',
+                type:'bar',
+                yAxisIndex:0,
                 data:[4,8,9]
             },
             {
-                name:'融资',
+                name:'融资金额',
                 type:'line',
-                data:[2,7,10]
+                yAxisIndex:1,
+                data:[18981,3310106,1199877]
             }
-            // {
-            //     name:'融资金额',
-            //     type:'line',
-            //     data:[18981,3310106,1199877]
-            // }
         ]
     };
     var chart = new zcharts(timeOption);
