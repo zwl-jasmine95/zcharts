@@ -11,10 +11,7 @@
         },
         yAxis : [
             {
-                name: "融资数量"
-            },
-            {
-                name: "融资金额"
+                name: "融资"
             }
         ],
         series: [
@@ -22,13 +19,13 @@
                 name:'融资数量',
                 type:'line',
                 yAxisIndex:0,
-                data:[4,8,9]
+                data:[9,23,5]
             },
             {
                 name:'融资金额',
                 type:'line',
-                yAxisIndex:1,
-                data:[18981,3310106,1199877]
+                yAxisIndex:0,
+                data:[15,6,18]
             }
         ]
     };
