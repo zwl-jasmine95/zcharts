@@ -25,29 +25,11 @@
                 data:[4,8,9]
             },
             {
-                name:'hahah',
-                type:'line',
-                yAxisIndex:0,
-                data:[9,5,3]
-            },
-            {
                 name:'融资金额',
-                type:'line',
+                type:'bar',
                 yAxisIndex:1,
                 data:[18981,3310106,1199877]
             }
-            // {
-            //     name:'融资金额',
-            //     type:'pie',
-            //     radius:[100,30],
-            //     center:[0.5,0.5],
-            //     data:[
-            //         {name:'A',value:20},
-            //         {name:'B',value:12},
-            //         {name:'C',value:36},
-            //         {name:'D',value:9}
-            //     ]
-            // }
         ]
     };
     var chart = new zcharts(timeOption);
