@@ -30,6 +30,7 @@ svg{
 }
 .linecircle{
     fill:#fff;
+    stroke-width:2px;
 }
 /**
  *04.交互提示框
@@ -37,12 +38,12 @@ svg{
 */
 .tooltip{
     position: absolute;
-    width: 120px;
+    width: auto;
     height: auto;
     font-size: 14px;
-    text-align: center;
-    border: solid 1px;
-    background-color: #6F6F6F;
+    background-color: #000;
+    line-height: 20px;
     color: #fff;
     border-radius: 5px;
+    padding:7px 10px;
 }
