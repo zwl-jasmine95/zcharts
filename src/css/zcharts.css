@@ -47,3 +47,13 @@ svg{
     border-radius: 5px;
     padding:7px 10px;
 }
+/**
+ *05.legned
+ *
+*/
+.legend{
+    width: auto;
+    height: auto;
+    margin:5px auto;
+    border:solid 1px red;
+}

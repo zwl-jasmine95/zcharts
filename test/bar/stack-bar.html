@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>堆叠柱状图</title>
+    <script src="../../bower_components/d3/d3.min.js"></script>
+    <script src="../../bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="../../src/js/zcharts.js"></script>
+    <link href="../../src/css/zcharts.css" type="text/css" rel="stylesheet">
+    <style>
+        *,body{
+            margin: 0;
+            padding: 0;
+        }
+        div.container{
+            padding:20px;
+            background-color: #FAFAFA;
+            height: 1500px;
+        }
+        .container>div{
+            background-color: #fff;
+            width:700px;
+            height: 400px;
+            display: inline-block;
+            box-shadow: 0 1px 3px 0 rgba(0,0,0,.2),0 1px 1px 0 rgba(0,0,0,.14),0 2px 1px -1px rgba(0,0,0,.12);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="time"></div>
+
+    </div>
+    <script>
+        (function () {
+            var timeOption = {
+                padding:{top:100,bottom:100,left:50,right:100},
+                container:{width:700,height:400},
+                color:['#95CCE6','#B6A2DE','#FED23D','#4087D7','#CBD87E'],
+                legend:["融资数量","融资金额","其他"],
+                xAxis :
+                {
+                    data : ["北京加双筷子科技有限公司","北京小桔科技有限公司","南京途牛科技有限公司"],
+                    name: "创业公司",
+                    xAxisLable : {
+                        rotate : 0,
+                        margin : 0     //刻度标签与轴线之间的距离
+                    }
+                },
+                yAxis : [
+                    {
+                        name: "数量"
+                    }
+                ],
+                series: [
+                    {
+                        name:'融资数量',
+                        type:'bar',
+                        stack:'融资',
+                        yAxisIndex:0,
+                        data:[4,8,9]
+                    },
+                    {
+                        name:'融资金额',
+                        type:'bar',
+                        stack:'融资',
+                        yAxisIndex:0,
+                        data:[18,6,14]
+                    },
+                    {
+                        name:'其他1',
+                        type:'bar',
+                        stack:'其他',
+                        yAxisIndex:0,
+                        data:[10,19,5]
+                    },
+                    {
+                        name:'其他2',
+                        type:'bar',
+                        stack:'其他',
+                        yAxisIndex:0,
+                        data:[10,19,5]
+                    },
+                    {
+                        name:'其他3',
+                        type:'bar',
+                        stack:'',
+                        yAxisIndex:0,
+                        data:[10,19,5]
+                    }
+                ]
+            };
+            var chart = new zcharts(timeOption);
+            chart.drawSvg('time',timeOption);
+
+        })();
+    </script>
+</body>
+</html>
