@@ -1,3 +1,8 @@
+/**
+ * author : zeng wenli
+ * time : 2016.10.8
+ * description : a plug-in based on d3.js
+ */
 function zcharts(params) {
 
     params.series.map(function (d,i) {
@@ -323,6 +328,11 @@ function zcharts(params) {
                 zcharts.drawLine(opts);
             }
         }
+
+        /**
+         * 绘制legend
+         */
+        //zcharts.drawLegend(opts);
     };
 
     zcharts.drawBar = function (option) {
@@ -597,24 +607,50 @@ function zcharts(params) {
     zcharts.drawLegend = function (option) {
         var defaultOpts = {
             svg : null,
+            height : null,
+            width : null,
             tooltip : null,
             padding : null,
-            lineData : null
+            lineData : null,
+            barData : null,
+            series: null
         };
         var svg = option.svg || defaultOpts.svg,
-            tooltip = option.tooltip || defaultOpts.tooltip,
+            height = option.height || defaultOpts.height,
             padding = option.padding || defaultOpts.padding,
+            width = option.width || defaultOpts.width,
+            series = option.series || defaultOpts.series,
             lineData = option.lineData || defaultOpts.lineData,
-            barData = option.lineData || defaultOpts.barData;
+            barData = option.barData || defaultOpts.barData;
 
         var legend = svg.append('g')
-            .attr('class','legend')
+            .attr('class','legendBox')
             .attr('transform','translate(' + padding.left + ',' + (height - padding.bottom) + ')');
-        legend.selectAll('rect')
-            .data(barData)
-            .enter()
-            .append('rect')
-            .attr();
+
+        series.map(function (d,i) {
+            console.log(d);
+            var legendGroup = legend.append('g');
+            legendGroup.append('rect')
+                .attr('fill',d.color)
+                .attr('width',30)
+                .attr('height',20);
+
+            legendGroup.append('text')
+                .attr("fill","black")
+                .attr("x",width - padding.left*2)
+                .attr("y",(i + 1) * 35 + 13)
+                .text(d.name);
+
+
+        });
+
+        // legend.selectAll('rect')
+        //     .data(barData)
+        //     .enter()
+        //     .append('rect')
+        //     .attr();
+        
+
 
     };
 
