@@ -11,8 +11,8 @@ var del = require('del'); //删除
 
 var src = 'src/';
 var dst = 'dist/';
-var jsFile = 'zcharts.min.js';  //最后合并压缩成的js文件名
-var cssFile = 'zcharts.min.css';  //最后合并压缩成的css文件名
+var jsFile = 'zchart.min.js';  //最后合并压缩成的js文件名
+var cssFile = 'zchart.min.css';  //最后合并压缩成的css文件名
 
 gulp.task('cleanCss', function (cb) {   //定义名为cleanCss的任务——删除css
     return del(dst + '/*.css', cb);  //删除dist文件夹下的所有js文件
