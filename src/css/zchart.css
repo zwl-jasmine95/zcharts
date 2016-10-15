@@ -1,10 +1,19 @@
 /**
- *01.
+ *01.common style
  *
 */
 svg {
   font-family: "Microsoft YaHei";
   font-size: 14px;
+}
+rect,
+circle,
+path {
+  cursor: pointer;
+}
+line.boldLine,
+circle {
+  stroke-width: 2px;
 }
 /**
  *02.坐标轴
@@ -51,9 +60,7 @@ svg {
  *05.legned
  *
 */
-.legendBox {
-  width: 300px;
-  height: 50px;
-  margin: 5px auto;
-  border: solid 1px red;
+g.legendBox {
+  width: auto;
+  height: auto;
 }

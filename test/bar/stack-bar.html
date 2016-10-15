@@ -5,7 +5,8 @@
     <title>堆叠柱状图</title>
     <script src="../../bower_components/d3/d3.min.js"></script>
     <script src="../../bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="../../dist/zchart.min.js"></script>
+    <!--<script src="../../dist/zchart.min.js"></script>-->
+    <script src="../../src/js/zcharts.js"></script>
     <link href="../../dist/zchart.min.css" type="text/css" rel="stylesheet">
     <style>
         *,body{
@@ -19,8 +20,6 @@
         }
         .container>div{
             background-color: #fff;
-            width:700px;
-            height: 400px;
             display: inline-block;
             box-shadow: 0 1px 3px 0 rgba(0,0,0,.2),0 1px 1px 0 rgba(0,0,0,.14),0 2px 1px -1px rgba(0,0,0,.12);
         }
@@ -34,10 +33,12 @@
     <script>
         (function () {
             var timeOption = {
-                padding:{top:100,bottom:100,left:50,right:100},
+                padding:{top:60,bottom:100,left:50,right:100},
                 container:{width:700,height:400},
                 color:['#95CCE6','#B6A2DE','#FED23D','#4087D7','#CBD87E'],
-                legend:["融资数量","融资金额","其他1","其他2","其他3"],
+                legend:{
+                    data:["融资数量","融资金额","其他1","其他2","其他3"]
+                },
                 xAxis :
                 {
                     data : ["北京加双筷子科技有限公司","北京小桔科技有限公司","南京途牛科技有限公司"],
@@ -83,7 +84,7 @@
                     },
                     {
                         name:'其他3',
-                        type:'bar',
+                        type:'line',
                         stack:'',
                         yAxisIndex:0,
                         data:[10,19,5]
@@ -91,7 +92,7 @@
                 ]
             };
             var chart = new zcharts(timeOption);
-            chart.drawSvg('time',timeOption);
+            chart.initSvg('time',timeOption);
 
         })();
     </script>
