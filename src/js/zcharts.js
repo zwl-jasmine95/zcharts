@@ -409,7 +409,7 @@ function zcharts(params) {
                         });
                 }
             });
-            svg.selectAll("rect")
+            svg.selectAll(".rectGroup>rect")
                 .on("mouseover",function(v,j){
                     d3.select(this).attr('opacity',0.8);
                     /**
@@ -494,7 +494,7 @@ function zcharts(params) {
                     .attr('stroke', d.color)
                     .attr('transform','translate(' + (padding.left + x.xScale.rangeBand()/2) + ',' + padding.top + ')');
             });
-            svg.selectAll("circle")
+            svg.selectAll(".lineGroup>circle")
                 .on("mouseover",function(v,j){
                     /**
                      *鼠标移入时，

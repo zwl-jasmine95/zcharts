@@ -36,6 +36,6 @@
         ]
     };
     var chart = new zcharts(timeOption);
-    chart.drawSvg('time',timeOption);
+    chart.initSvg('time',timeOption);
 
 })();
