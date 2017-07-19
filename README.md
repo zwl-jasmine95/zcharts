@@ -102,6 +102,8 @@ var timeOption = {
  var chart = new zcharts(timeOption);
  chart.initSvg('time',timeOption);
 ```
+![]()
+
 ---
 
 ### 三、案例
