@@ -4,6 +4,8 @@
 ### 一、介绍
 这是我闲暇时间开发的一款插件，主要是利用d3.js的知识，仿照echarts的模式开发的。所有js代码封装成为一个函数，和echarts一样，对外提供了一个配置参数，在使用的时候，按照需要来配置参数，就可以生成对应的图表。
 
+---
+
 ### 二、使用方式
 1.  获取js文件和css文件
 将本GitHub的dist文件夹中的zcharts.min.js下载在项目中。需要注意的是，此js文件依赖d3以及jQuery，可以在本GitHub的bower_components文件寻找。
@@ -100,7 +102,7 @@ var timeOption = {
  var chart = new zcharts(timeOption);
  chart.initSvg('time',timeOption);
 ```
-
+---
 
 ### 三、案例
 为了显示demo效果，上传代码中任然包含bower_components文件。
@@ -114,6 +116,7 @@ var timeOption = {
 #### 3.饼图：
 （1）[饼图demo](https://zwl-jasmine95.github.io/zcharts/test/pie/pie.html) <br>
 
+---
 
 ### 四、D3.js知识
 [d3.js官网](https://d3js.org/) <br>
