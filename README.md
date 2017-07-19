@@ -102,7 +102,7 @@ var timeOption = {
  var chart = new zcharts(timeOption);
  chart.initSvg('time',timeOption);
 ```
-![](https://zwl-jasmine95.github.io/zcharts/images/line.png)
+![](https://github.com/zwl-jasmine95/zcharts/blob/master/images/line.png)
 
 **在开发过程中，增加了许多交互事件。例如鼠标移到数据上时，会显示对应的数据信息；点击legend，图表中对应的数据会显示/隐藏。**
 
